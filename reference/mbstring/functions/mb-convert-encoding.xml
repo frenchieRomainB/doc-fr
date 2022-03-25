@@ -21,7 +21,7 @@
    <parameter>to_encoding</parameter>
    optionnellement depuis <parameter>from_encoding</parameter>.
    Si <parameter>string</parameter> est un &array;, toutes ses valeurs &string;
-   seront convertit récursivement.
+   seront converties récursivement.
   </para>
  </refsect1>
  
@@ -33,7 +33,7 @@
      <term><parameter>string</parameter></term>
      <listitem>
       <para>
-       La &string; ou &array; à encoder.
+       La &string; ou le &array; à encoder.
       </para>
      </listitem>
     </varlistentry>
@@ -67,17 +67,17 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   La &string; ou &array; encodé en cas de succès, &return.falseforfailure;.
+   La &string; ou le &array; encodé en cas de succès, &return.falseforfailure;.
   </para>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
   <para>
-   À partir de PHP 8.0.0, une <classname>ValueError</classname> est lancé si la
+   À partir de PHP 8.0.0, une <classname>ValueError</classname> est lancée si la
    valeur de <parameter>to_encoding</parameter> ou
    <parameter>from_encoding</parameter> est un encodage invalide.
-   Antérieur à PHP 8.0.0, une <constant>E_WARNING</constant> était émise à la place.
+   Avant PHP 8.0.0, une <constant>E_WARNING</constant> était émise à la place.
   </para>
  </refsect1>
 
